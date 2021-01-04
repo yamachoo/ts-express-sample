@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "ts-node-dev ./src/bin/www.ts",
-    "lint": "eslint . --ext .ts --fix"
+    "dev": "ts-node-dev --respawn ./src/bin/www.ts",
+    "lint": "eslint . --ext .ts --fix",
+    "build": "rm -rf ./dist/* && tsc",
+    "start": "node ./dist/bin/www"
   },
   "husky": {
     "hooks": {

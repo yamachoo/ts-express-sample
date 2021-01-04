@@ -1,7 +1,12 @@
-.DS_Store
+# dir
+dist
 node_modules
 public
 
+# file
+.DS_Store
+
+# keep
 !.gitkeep
 
 # Log files
